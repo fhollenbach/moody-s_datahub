@@ -25,7 +25,7 @@ dependencies = [
     "jupyterlab-widgets",
     "openpyxl",
     "pandas",
-    "paramiko",
+    "paramiko==3.5.1",
     "pyarrow",
     "pycparser",
     "pynacl",

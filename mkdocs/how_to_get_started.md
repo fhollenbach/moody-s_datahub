@@ -24,7 +24,8 @@ Install the package "orbis-0.0.1-py3-none-any.whl" or "orbis-0.0.1.tar.gz" using
 
 
 ```python
-pip install moodys_datahub-0.0.1-py3-none-any.whl
+!pip install paramiko==3.5.1
+!pip install moodys_datahub-0.0.1-py3-none-any.whl
 ```
 
 ## Usage
