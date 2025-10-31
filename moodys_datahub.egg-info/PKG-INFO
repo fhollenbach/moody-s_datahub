@@ -19,7 +19,7 @@ Requires-Dist: ipywidgets
 Requires-Dist: jupyterlab-widgets
 Requires-Dist: openpyxl
 Requires-Dist: pandas
-Requires-Dist: paramiko
+Requires-Dist: paramiko==3.5.1
 Requires-Dist: pyarrow
 Requires-Dist: pycparser
 Requires-Dist: pynacl
