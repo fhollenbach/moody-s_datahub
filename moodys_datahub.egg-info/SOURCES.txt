@@ -4,6 +4,7 @@ LICENSE.md
 MANIFEST.in
 README.md
 pyproject.toml
+.vscode/settings.json
 mkdocs/examples.ipynb
 mkdocs/how_to_get_started.ipynb
 mkdocs/how_to_get_started.md

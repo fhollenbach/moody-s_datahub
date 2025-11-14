@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: moodys_datahub
-Version: 0.0.11
+Version: 0.0.2
 Summary: moody datahub package
 Author-email: Kristoffer Gulmark Poulsen <kgp.lib@cbs.dk>
 Requires-Python: >=3.9.16
