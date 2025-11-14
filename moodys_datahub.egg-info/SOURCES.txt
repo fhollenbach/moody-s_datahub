@@ -3,8 +3,6 @@ LICENSE.md
 MANIFEST.in
 README.md
 pyproject.toml
-dist/moodys_datahub-0.0.1-py3-none-any.whl
-dist/moodys_datahub-0.0.1.tar.gz
 mkdocs/examples.ipynb
 mkdocs/how_to_get_started.ipynb
 mkdocs/how_to_get_started.md
@@ -27,8 +25,3 @@ moodys_datahub/data/data_dict.xlsx
 moodys_datahub/data/data_products.xlsx
 moodys_datahub/data/date_cols.xlsx
 moodys_datahub/data/products.xlsx
-orbis.egg-info/PKG-INFO
-orbis.egg-info/SOURCES.txt
-orbis.egg-info/dependency_links.txt
-orbis.egg-info/requires.txt
-orbis.egg-info/top_level.txt

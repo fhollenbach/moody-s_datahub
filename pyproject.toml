@@ -3,12 +3,12 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "moodys_datahub"
+name = "moodys-datahub"
 authors = [
     {name = "Kristoffer Gulmark Poulsen", email = "kgp.lib@cbs.dk"}
 ]
 description = "moody datahub package"
-version = "0.0.1"
+version = "0.0.11"
 readme = "README.md"
 requires-python = ">=3.9.16"
 dependencies = [
