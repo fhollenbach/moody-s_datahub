@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "moodys-datahub"
+name = "moodys_datahub"
 authors = [
     {name = "Kristoffer Gulmark Poulsen", email = "kgp.lib@cbs.dk"}
 ]
