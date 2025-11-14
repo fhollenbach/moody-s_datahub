@@ -3565,22 +3565,29 @@ def fuzzy_query(df: pd.DataFrame, names: list, match_column: str = None, return_
     Perform fuzzy string matching with a list of input strings against a specific column in a DataFrame.
     """
 
+    def safe_lower(x):
+        """Safely convert to lowercase, handling None and NaN values."""
+        if x is None or (isinstance(x, float) and pd.isna(x)):
+            return ""
+        return str(x).lower()
+
     def remove_suffixes(choices, suffixes):
         for i, choice in enumerate(choices):
-            choice_lower = choice.lower()  # convert to lowercase for case-insensitive comparison
+            choice_lower = safe_lower(choice)
             for suffix in suffixes:
-                if choice_lower.endswith(suffix.lower()):
-                    # Remove the suffix from the end of the string
-                    choices[i] = choice_lower[:-len(suffix)].strip()
+                suffix_lower = safe_lower(suffix)
+                if choice_lower.endswith(suffix_lower):
+                    choices[i] = choice_lower[:-len(suffix_lower)].strip()
         return choices
 
     def remove_substrings(choices, substrings):
         for substring in substrings:
-            choices = [choice.replace(substring.lower(), '') for choice in choices]
+            substring_lower = safe_lower(substring)
+            choices = [safe_lower(choice).replace(substring_lower, '') for choice in choices]
         return choices
 
-    choices = [choice.lower() for choice in df[match_column].tolist()]
-    names = [name.lower() for name in names]
+    choices = [safe_lower(choice) for choice in df[match_column].tolist()]
+    names = [safe_lower(name) for name in names]
 
     if remove_str:
         names = remove_suffixes(names, remove_str)
